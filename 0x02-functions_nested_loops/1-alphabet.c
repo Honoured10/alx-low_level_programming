@@ -9,7 +9,6 @@
  * Return: Always 0.
  */
 
-
 ({
 char letters;
 
@@ -19,4 +18,4 @@ putchar(letters);
 putchar('\n');
 
 return (0);
-})
+}
