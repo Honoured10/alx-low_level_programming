@@ -1,21 +1,15 @@
-/*
- * File: 2-print_alphabet.c
- */
-
 #include "main.h"
-
 /**
- * 
- * Return: Always 0.
+ * print_alphabet - prints the english alphabet from a-z.
+ * Return: Nothing.
  */
+void print_alphabet(void)
+{
+char c;
 
-({
-char letters;
-
-for (letters = 'a'; letters <= 'z'; letters++)
-putchar(letters);
-
-putchar('\n');
-
-return (0);
+for (c = 'a'; c <= 'z'; c++)
+{
+_putchar(c);
+}
+_putchar('\n');
 }
