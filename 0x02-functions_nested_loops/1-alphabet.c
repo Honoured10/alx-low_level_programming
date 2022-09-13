@@ -9,7 +9,7 @@
  *
  * Return: Always 0.
  */
-int main.c(void)
+int main(void)
 {
 char letters;
 
