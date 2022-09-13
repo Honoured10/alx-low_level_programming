@@ -7,7 +7,7 @@
 
 int main(void)
 {
-int h, sam;
+int s, sam;
 
 for (s = 0; s < 1024; s++)
 if (s % 3 == 0 || s % 5 == 0)
