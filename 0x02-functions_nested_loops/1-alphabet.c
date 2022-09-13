@@ -8,7 +8,8 @@
  * 
  * Return: Always 0.
  */
-()
+
+(
 {
 char letters;
 
