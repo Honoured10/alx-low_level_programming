@@ -8,7 +8,6 @@ int main(void)
 int count;
 unsigned long i, j, k;
 unsigned long m, n, p, carry;
-
 count = 0;
 i = 0;
 j = 1;
