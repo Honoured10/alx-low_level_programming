@@ -24,5 +24,5 @@ return (checker(n + 1, base));
  */
 int _sqrt_recursion(int n)
 {
-	return (checker(1, n));
+	return (checker(1, n * n));
 }
