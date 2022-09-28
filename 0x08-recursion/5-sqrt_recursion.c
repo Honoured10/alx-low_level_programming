@@ -12,8 +12,8 @@ int checker(int n, int base)
 if (n * n < base)
 return (-1);
 else if
-(n *n == base)
-return (1);
+(n * n == base)
+return (n);
 else
 return (checker(n + 1, base));
 }
