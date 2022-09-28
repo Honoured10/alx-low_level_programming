@@ -1,8 +1,7 @@
-#include "main.h"
 /**
- * int factorial -finds the factorial of a number.
- * @s: number to factorize
- * Returns: factorial of number n
+ * factorial - returns the factorial of the number
+ * @n: the max factorial
+ * Return: factorial of number n
  */
 
 int factorial(int n)
@@ -13,5 +12,5 @@ else if
 (n == 0)
 return (1);
 else
-return (n* factorial(n-1));
+return (n * factorial(n - 1));
 }
