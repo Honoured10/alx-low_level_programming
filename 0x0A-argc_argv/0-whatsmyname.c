@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- * main -Entry point
- * prints its name, followed by a new line.
- * Returns: 0 (Success)
+ * main - program prints its own name.
+ * @argc: argument count
+ * @argv: argument vectors
+ * Return: 0 on success
  */
 
 int main(int argc, char *argv)
 {
-    printf("%c", argv[0]);
-    printf("\n");
+    printf("%s \n", argv[0]);
     return (0);
 }
