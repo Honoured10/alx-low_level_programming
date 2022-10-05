@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strncmp - compares two strings within b bytes.
  * @s1: string to check
@@ -7,6 +8,8 @@
  * Return: 0 if strings are the same
  * any other number if they are different.
  */
+
+ strstr(char *haystack, char *needle);
 int _strncmp(char *s1, char *s2, unsigned int b)
 {
 	unsigned int i;
