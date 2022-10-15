@@ -1,41 +1,39 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 
-
 /**
- * error - Print the error
- * @status: Number to exit
- **/
-void error(int status)
+ * main - check the code for Holberton School students.
+ * @argc: argument count.
+ * @argv: argument vector.
+ *
+ * Return: Always 0.
+ */
+int main(int argc, char *argv[])
 {
-	printf("Error\n");
-	exit(status);
-}
+	char *opc = (char *) main;
+	int i, nbytes;
 
+	if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
 
-/**
- * main - Entry point
- * @aux: Size of argv
- * @argv: Arguments
- * Return: 0
- **/
-int main(int aux, char **argv)
-{
+	nbytes = atoi(argv[1]);
 
-	int i;
+	if (nbytes < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
 
-	if (aux != 2)
-		error(1);
+	for (i = 0; i < nbytes; i++)
+	{
+		printf("%02x", opc[i] & 0xFF);
+		if (i != nbytes - 1)
+			printf(" ");
+	}
 
-	aux = atoi(argv[1]);
-	if (aux < 0)
-		error(2);
-
-	unsigned char *bytes = (unsigned char *) main;
-
-	for (i = 0; i < aux; i++)
-		printf("%x%c", bytes[i], (i < aux - 1) ? ' ' : '\n');
-
+	printf("\n");
 	return (0);
 }
